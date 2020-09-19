@@ -91,6 +91,7 @@ body{background:#fff}
     width:100%;
     display:block;
     margin:0 auto;
+    height:800px;
   }
   .slider_con {
       background: #fff;
@@ -102,4 +103,4 @@ body{background:#fff}
       position: relative;
       text-align: center;
   }
-
+  .slider_con img{width:100%}

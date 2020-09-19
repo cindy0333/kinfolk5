@@ -1,0 +1,29 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap'); 
+/*작은글씨 산세리프 font-family:'Josefin Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap');
+/*내부작은글씨 세리프 font-family:'Nanum Myeongjo', serif*/
+@import url('https://fonts.googleapis.com/css2?family=Lustria&display=swap');
+/*큰글씨 세리프 font-family: 'Lustria', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital@1&display=swap');
+/*작은 내용글씨 이탤릭 세리프 font-family: 'Neuton', serif;*/
+
+*{margin:0;padding:0;}
+li{list-style:none}
+h1{font-family:'Crimson Text', serif;}
+h2, h3{font-family:'Josefin Sans', sans-serif;font-style:normal;font-weight:400;color:rgb(0,0,0);}
+p{color:rgb(61, 61, 61);font-family:'Nanum Myeongjo', serif ;font-weight: 400;line-height: 1.5em;font-weight: 700;}
+h3{font-size:11px;letter-spacing: 2px;}
+body{-webkit-font-smoothing: antialiased;}
+
+/* 링크스타일 */
+
+a{text-decoration:none;}
+a:link , a:visited {color:rgb(0,0,0);}
+a:hover{color:rgb(0,0,0);text-decoration:none;cursor: pointer;}
+a:active{color:#111;text-decoration:none;}
+
+.button{font-family:'Josefin Sans', sans-serif;font-size:18px;letter-spacing: none;white-space: nowrap;}
+.button:hover{background:#111;color:white;transition:all 0.5s}

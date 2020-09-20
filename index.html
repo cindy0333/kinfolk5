@@ -9,7 +9,8 @@
   
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
- 
+    
+    
 </head>
 <body>
     <header>
@@ -23,7 +24,7 @@
                 </ul>
             </div>
             <div class="main_logo">
-                <a href=""><img src="img/logo.png"></a>
+                <a href=""><img id="main_logo_img" src="img/logo.svg"></a>
             </div>
             <div class="main_menu_right">
                 <a href=""><img src="img/serch.png"></a>
@@ -33,13 +34,6 @@
                   <span></span>
                 </div>
             </div>
-        <!-- <use xlink:href="#search">
-            <svg id="search" viewBox="0 0 13.3 14">
-                <path class="st0" d="M13.1,12.7l-3-3c0.9-1,1.5-2.4,1.5-3.9C11.6,2.6,9,0,5.8,0C2.6,0,0,2.6,0,5.8c0,3.2,2.6,5.8,5.8,5.8
-            c1.1,0,2.2-0.3,3.1-0.9l3,3.1c0.2,0.2,0.4,0.2,0.6,0.2c0.2,0,0.4-0.1,0.6-0.2C13.3,13.4,13.3,12.9,13.1,12.7L13.1,12.7z M1.6,5.8
-            c0-2.3,1.9-4.2,4.2-4.2c2.3,0,4.2,1.9,4.2,4.2C10,8.1,8.1,10,5.8,10C3.5,10,1.6,8.1,1.6,5.8z"></path> 
-            </svg>
-        </use> -->
         </div>
       </section> 
     </header>
@@ -152,7 +146,7 @@
                <h1>Flower Arranging: <br>Miyoko Yasumoto</h1>
                </div>
                <div>
-               <p><i>In her Parisian atelier, Miyoko Yasumoto makes an unfrivolous case for <br>floristry.  Words by Annick Weber.  Photography by Luc Braquet.</i></p>
+               <p>In her Parisian atelier, Miyoko Yasumoto makes an unfrivolous case for <br>floristry.  Words by Annick Weber.  Photography by Luc Braquet.</p>
                </div>
              </div>
              <div class="about_people_img">
@@ -165,13 +159,25 @@
         </section>
         <seciton class="currentissue_container">
              <h2>Current Issue</h2>
-             <div class="currentissue_magazine">
+             <!-- <div class="currentissue_magazine">
                  <ul>
-                     <li><a href=""><figure><img src="img/K37_SpreadSliders_2020_009-2048x1365.jpg"></figure></a></li>
-                     <li><a href=""><figure><img src="img/K37_SpreadSliders_2020_001-2048x1365.jpg"></figure></a></li>
-                     <li><a href=""><figure><img src="img/K37_SpreadSliders_2020_002-2048x1365.jpg"></figure></a></li>
+                     <li class="magazine1"><a href=""><figure><img src="img/K37_SpreadSliders_2020_009-2048x1365.jpg"></figure></a></li>
+                     <li class="magazine2"><a href=""><figure><img src="img/K37_SpreadSliders_2020_001-2048x1365.jpg"></figure></a></li>
+                     <li class="magazine3"><a href=""><figure><img src="img/K37_SpreadSliders_2020_002-2048x1365.jpg"></figure></a></li>
                  </ul>
-             </div>
+             </div> -->
+
+             <div class="currentissue_magazine">
+                <div class="slider">
+                    <div class="slider_con"><a href=""><img src="img/K37_SpreadSliders_2020_009-2048x1365.jpg"></a></div>
+                    <div class="slider_con"><a href=""><img src="img/K37_SpreadSliders_2020_001-2048x1365.jpg"></a></div>
+                    <div class="slider_con"><a href=""><img src="img/K37_SpreadSliders_2020_002-2048x1365.jpg"></a></div>
+                    <!-- <div class="slider_con"><a href=""><img src="img/K37_SpreadSliders_2020_003-2048x1365.jpg"></a></div>
+                    <div class="slider_con"><a href=""><img src="img/K37_SpreadSliders_2020_004-2048x1365.jpg"></a></div> -->
+                </div>
+            </div>
+
+            
             <p>From wilderness to windowsill: Plant roots in the world around you.</p>
             <a href="" class="button">Buy Now</a>
         </seciton>
@@ -182,5 +188,43 @@
     <footer>
 
     </footer>
+   
+    <script>
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("main_logo_img").className = "marin_logo_po2";
+          } else {
+            document.getElementById("main_logo_img").className = "marin_logo_po";
+          };
+            
+        
+            
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("main_header").style.height = "70px";
+          } else {
+            document.getElementById("main_header").style.height = "276px";
+          }
+            
+               if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("main_logo_img").style.paddingTop = "0px";
+          } else {
+            document.getElementById("main_logo_img").style.paddingTop = "430px";
+          }
+            
+            
+            
+            
+            
+        }
+            
+            
+            
+        </script>
+
+
 </body>
+
 </html>

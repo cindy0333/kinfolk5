@@ -4,7 +4,7 @@ body{background:#fff}
 
 
 /* gnb */
-#main_header{width:100%;background:#fff;position: fixed;z-index: 9999999;height:276px;transition: 0.3s;}
+#main_header{width:100%;background:#fff;position: fixed;z-index: 9999999;}
 #main_gnb_wrap{width:1803px;height:70px;margin:0 auto;display:flex;justify-content: space-between;font-family:'Josefin Sans', sans-serif;font-weight: 400;}
 .main_gnb{font-size:18px;-webkit-font-smoothing: antialiased;}
 .main_gnb ul{display:flex;height:70px;align-items: center;}
@@ -13,16 +13,7 @@ body{background:#fff}
 .button{border:1px solid #000;padding:9.5px 22px}
 
 .main_logo{background:#fff;display:flex;align-items: center;margin-left:-220px}
-/* .main_logo img{width:170px;} */
-
-
-
-#main_logo_img{transition: 0.2s;margin:0 auto;padding-top:430px;display: flex}
-.marin_logo_po{width:1030px}
-.marin_logo_po2{padding-top:0px;width:170px}
-
-
-
+.main_logo img{width:170px;}
 
 
 
@@ -36,8 +27,8 @@ body{background:#fff}
 
 
 /* hero */
-#hero {display: flex;flex-direction: column;align-items: center;height:1228px;width:100%;background:url(../img/Rock_Steady_01-2048x1365.jpg)no-repeat center 250px;background-size:cover;color:#fff;margin-bottom:130px}
-#hero span{font-family:'Josefin Sans', sans-serif;font-size:10px;letter-spacing: 1px;padding-top:40%}
+#hero {display: flex;flex-direction: column;align-items: center;height:1228px;width:100%;background:url(../img/Rock_Steady_01-2048x1365.jpg)no-repeat center;background-size:cover;color:#fff;margin-bottom:130px}
+#hero span{font-family:'Josefin Sans', sans-serif;font-size:10px;letter-spacing: 1px;padding-top:26%}
 #hero h1{font-family: 'Lustria', serif;font-size:90px;font-weight: normal;padding:10px 0 15px;letter-spacing: 1px;}
 #hero h3{font-family:'Nanum Myeongjo', serif;font-size:18px;font-weight:bold;color:#fff;letter-spacing: 0.5px;}
 #hero::after{content: ' ';display: table;}
@@ -70,7 +61,7 @@ body{background:#fff}
 .about_people_text h1{font-size:90px;line-height:97.2px;font-weight: normal;}
 .about_people_text h3{padding-bottom:20px}
 .about_people_text span{font-size:11px;font-family:'Josefin Sans', sans-serif;letter-spacing:2px;padding-bottom:20px;display:block}
-.about_people_text p{color:#000;font-size:23px;font-family: 'Neuton', serif;-webkit-font-smoothing: antialiased;letter-spacing:0.5px;font-weight: normal;}
+.about_people_text p{color:#000;font-size:23px;font-family: 'Neuton', serif;-webkit-font-smoothing: antialiased;letter-spacing:0.5px;}
 
 
 /* Mitchell Gold+Bob William */
@@ -85,17 +76,11 @@ body{background:#fff}
 .currentissue_container h2{text-align: center;font-size:20px;margin-bottom:100px;letter-spacing:none;}
 .currentissue_container img{height:780px}
 .currentissue_container p{font-size:20px;color:#000;text-align: center;margin-bottom:65px}
+.currentissue_magazine ul{display:flex;width:100%;position: relative;}
+.currentissue_magazine ul li.magazine1{height:100%;position: fixed;left:-45%}
+.currentissue_magazine ul li.magazine2{position: fixed;left:-50%}
+.currentissue_magazine ul li.magazine3{position: fixed;right:-45%}
 
+.currentissue_magazine ul li:first-child{margin-left:-41%}
 
-
-
-  .currentissue_magazine {
-    font-family:Arial;
-    width:100%;
-    display:block;
-    margin:0 auto;
-    height:800px;
-    overflow: hidden;
-  }
-  .slider{display:flex;justify-content: center;}
 
